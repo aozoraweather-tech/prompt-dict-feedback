@@ -1,0 +1,31 @@
+name: タグの変換・訳の訂正
+description: 日本語が違うタグに変換された、タグの日本語訳・ジャンルがおかしい、など
+title: '[訂正] '
+labels: ['correction']
+body:
+  - type: input
+    id: input
+    attributes:
+      label: 打った言葉
+      placeholder: 例)ロングヘア
+    validations:
+      required: true
+  - type: input
+    id: actual
+    attributes:
+      label: 出たタグ(または訳・ジャンル)
+      placeholder: 例)long hair
+    validations:
+      required: true
+  - type: input
+    id: expected
+    attributes:
+      label: 正しいと思うタグ(または訳・ジャンル)
+      placeholder: 例)very long hair
+    validations:
+      required: true
+  - type: textarea
+    id: note
+    attributes:
+      label: 補足(任意)
+      description: そう思う理由や、参考になるページ(Danbooru の Wiki など)があれば

@@ -1,0 +1,17 @@
+name: 要望
+description: こんな機能がほしい、ここを使いやすくしてほしい、など
+title: '[要望] '
+labels: ['enhancement']
+body:
+  - type: textarea
+    id: request
+    attributes:
+      label: ほしいこと
+      description: どんな機能・変更がほしいか
+    validations:
+      required: true
+  - type: textarea
+    id: reason
+    attributes:
+      label: 困っていること・使いたい場面(任意)
+      description: なぜほしいか、どんなときに使いたいか

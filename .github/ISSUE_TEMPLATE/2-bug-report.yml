@@ -1,0 +1,34 @@
+name: 不具合
+description: 動かない、表示が崩れる、思った動きにならない、など
+title: '[不具合] '
+labels: ['bug']
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: 起きたこと
+      description: どうなったか、本来はどうなってほしいか
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 起きるまでの操作
+      placeholder: |
+        1. 「猫耳、」と打つ
+        2. できたタグをタップする
+        3. ...
+    validations:
+      required: true
+  - type: input
+    id: browser
+    attributes:
+      label: 使っているブラウザ・端末
+      placeholder: 例)Windows の Chrome、iPhone の Safari
+    validations:
+      required: true
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: スクリーンショット(任意)
+      description: 画面の画像があれば、ここに貼り付けてください

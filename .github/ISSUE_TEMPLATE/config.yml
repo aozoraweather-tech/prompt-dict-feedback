@@ -1,0 +1,2 @@
+# 空の Issue は作れないようにして、下のフォームのどれかから書いてもらう
+blank_issues_enabled: false
